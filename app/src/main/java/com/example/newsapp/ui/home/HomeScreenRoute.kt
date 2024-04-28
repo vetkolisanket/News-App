@@ -15,12 +15,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.example.newsapp.R
+import com.example.newsapp.ui.base.Route
 
 @Composable
 fun HomeScreenRoute(navController: NavHostController) {
     Column {
         Button(
-            onClick = { /*navController.navigate(route = Route.TopHeadline.name)*/ },
+            onClick = { navController.navigate(route = Route.TopHeadline.name) },
             shape = RoundedCornerShape(5.dp),
             modifier = Modifier
                 .padding(horizontal = 20.dp, vertical = 5.dp)
