@@ -12,15 +12,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.tooling.preview.UiMode
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 import com.example.newsapp.R
 
 @Composable
-fun HomeScreen() {
+fun HomeScreenRoute(navController: NavHostController) {
     Column {
         Button(
-            onClick = { /*TODO*/ },
+            onClick = { /*navController.navigate(route = Route.TopHeadline.name)*/ },
             shape = RoundedCornerShape(5.dp),
             modifier = Modifier
                 .padding(horizontal = 20.dp, vertical = 5.dp)
@@ -37,5 +37,5 @@ fun HomeScreen() {
 @Preview(name = "Full Preview", showSystemUi = true)
 @Composable
 private fun HomeScreenPreview() {
-    HomeScreen()
+//    HomeScreen()
 }
